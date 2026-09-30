@@ -1,0 +1,17 @@
+{
+  "name": "test-fynpo-base",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fynpo/base": "^2.1.11"
+  },
+  "devDependencies": {
+    "vitest": "^5.0.0",
+    "run-verify": "^2.1.8",
+    "vite": "^8.2.2"
+  }
+}
