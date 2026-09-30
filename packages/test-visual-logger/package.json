@@ -1,0 +1,17 @@
+{
+  "name": "test-visual-logger",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "visual-logger": "^2.1.9"
+  },
+  "devDependencies": {
+    "vitest": "^5.0.0",
+    "run-verify": "^2.1.8",
+    "vite": "^8.2.2"
+  }
+}
