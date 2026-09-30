@@ -1,0 +1,17 @@
+{
+  "name": "fynjs-tests",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Tests that exercise every published fynjs package",
+  "scripts": {
+    "bootstrap": "fynpo bootstrap",
+    "test": "fynpo run test"
+  },
+  "devDependencies": {
+    "fynpo": "^3.2.1"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  }
+}

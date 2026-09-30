@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["22.22.2", "24.15.0", "26"]
+    name: node ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install fyn
+        run: npm install -g fyn
+      - name: Install root dependencies
+        run: fyn install
+      - name: Bootstrap test packages
+        run: fyn run bootstrap
+      - name: Test
+        run: fyn run test
