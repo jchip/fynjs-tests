@@ -16,7 +16,7 @@ fyn run test
 
 ## CI
 
-GitHub Actions runs on push to `main`, on pull requests, and daily at 4am PST. It tests Node.js 22.22.2, 24.15.0 and 26.
+GitHub Actions runs on push to `main`, on pull requests, and daily at about 4am PST. It tests Node.js 22.22.2, 24.15.0 and 26.
 
 ## License
 

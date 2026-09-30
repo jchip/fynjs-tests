@@ -5,8 +5,8 @@ on:
     branches: [main]
   pull_request:
   schedule:
-    # 4am PST (12:00 UTC); 5am during PDT
-    - cron: "0 12 * * *"
+    # 4:17am PST (12:17 UTC); 5:17am during PDT
+    - cron: "17 12 * * *"
 
 jobs:
   test:
