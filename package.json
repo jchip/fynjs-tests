@@ -6,9 +6,11 @@
   "description": "Tests that exercise every published fynjs package",
   "scripts": {
     "bootstrap": "fynpo bootstrap",
-    "test": "fynpo run test"
+    "test": "fynpo run test",
+    "ci:check": "fynpo run test --stream"
   },
   "devDependencies": {
+    "fyn": "^3",
     "fynpo": "^3.2.1"
   },
   "engines": {

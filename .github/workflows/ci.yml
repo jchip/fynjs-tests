@@ -19,10 +19,10 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - name: Install fyn
-        run: npm install -g fyn
+        run: npm install -g fyn@3
       - name: Install root dependencies
         run: fyn install
       - name: Bootstrap test packages
         run: fyn run bootstrap
-      - name: Test
-        run: fyn run test
+      - name: Check
+        run: fyn run ci:check
