@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  schedule:
+    # 4am PST (12:00 UTC); 5am during PDT
+    - cron: "0 12 * * *"
 
 jobs:
   test:
