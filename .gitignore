@@ -1,0 +1,52 @@
+# Dependencies
+node_modules
+
+# Logs
+logs
+*.log
+*.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+fyn-debug*.log
+
+# Test coverage
+.nyc*
+coverage
+
+# Build artifacts
+dist
+dist-*
+build
+*.tsbuildinfo
+*.tgz
+
+# Temp & Cache
+.tmp*
+tmp
+.temp*
+.cache
+
+# Environment / Local settings
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.config
+.local
+
+# Monorepo & Fyn tooling
+.fynpo
+.fyn-audit.json
+_w
+
+# Lock files - fyn-lock.yaml is generated per package; committed only where a
+# package explicitly tracks it (that package's own .gitignore un-ignores it).
+# Named explicitly rather than via `*-lock*` - that glob previously swallowed
+# tracked source files (see FPO-57).
+fyn-lock.yaml
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
